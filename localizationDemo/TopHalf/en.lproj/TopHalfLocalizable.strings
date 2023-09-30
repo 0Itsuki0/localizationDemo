@@ -1,0 +1,13 @@
+/* 
+  TopHalfLocalizable.strings
+  localizationDemo
+
+  Created by Itsuki on 2023/09/29.
+  
+*/
+
+
+/* table view source Top Half*/
+"一" = "one";
+"二" = "two";
+"三" = "three";

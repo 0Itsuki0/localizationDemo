@@ -13,6 +13,10 @@
 		988B7BD22AC673A800052F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988B7BD02AC673A800052F54 /* Main.storyboard */; };
 		988B7BD42AC673A800052F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988B7BD32AC673A800052F54 /* Assets.xcassets */; };
 		988B7BD72AC673A800052F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988B7BD52AC673A800052F54 /* LaunchScreen.storyboard */; };
+		988B7BE32AC679FF00052F54 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 988B7BE52AC679FF00052F54 /* Localizable.strings */; };
+		988B7BE82AC67EA300052F54 /* LocalizationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B7BE72AC67EA300052F54 /* LocalizationUtils.swift */; };
+		988B7BED2AC6A12A00052F54 /* TopHalfLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 988B7BEF2AC6A12A00052F54 /* TopHalfLocalizable.strings */; };
+		988B7BF32AC6A14A00052F54 /* BottomHalfLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 988B7BF52AC6A14A00052F54 /* BottomHalfLocalizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,15 @@
 		988B7BD32AC673A800052F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		988B7BD62AC673A800052F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		988B7BD82AC673A800052F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		988B7BDE2AC6743E00052F54 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		988B7BE02AC6746700052F54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		988B7BE42AC679FF00052F54 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		988B7BE62AC67A2A00052F54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		988B7BE72AC67EA300052F54 /* LocalizationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationUtils.swift; sourceTree = "<group>"; };
+		988B7BEE2AC6A12A00052F54 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TopHalfLocalizable.strings; sourceTree = "<group>"; };
+		988B7BF02AC6A12C00052F54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TopHalfLocalizable.strings; sourceTree = "<group>"; };
+		988B7BF42AC6A14A00052F54 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/BottomHalfLocalizable.strings; sourceTree = "<group>"; };
+		988B7BF62AC6A14D00052F54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BottomHalfLocalizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +69,35 @@
 		988B7BC92AC673A800052F54 /* localizationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				988B7BEA2AC6A11100052F54 /* BottomHalf */,
+				988B7BE92AC6A0F700052F54 /* TopHalf */,
 				988B7BCA2AC673A800052F54 /* AppDelegate.swift */,
 				988B7BCC2AC673A800052F54 /* SceneDelegate.swift */,
 				988B7BCE2AC673A800052F54 /* ViewController.swift */,
+				988B7BE72AC67EA300052F54 /* LocalizationUtils.swift */,
+				988B7BE52AC679FF00052F54 /* Localizable.strings */,
 				988B7BD02AC673A800052F54 /* Main.storyboard */,
 				988B7BD32AC673A800052F54 /* Assets.xcassets */,
 				988B7BD52AC673A800052F54 /* LaunchScreen.storyboard */,
 				988B7BD82AC673A800052F54 /* Info.plist */,
 			);
 			path = localizationDemo;
+			sourceTree = "<group>";
+		};
+		988B7BE92AC6A0F700052F54 /* TopHalf */ = {
+			isa = PBXGroup;
+			children = (
+				988B7BEF2AC6A12A00052F54 /* TopHalfLocalizable.strings */,
+			);
+			path = TopHalf;
+			sourceTree = "<group>";
+		};
+		988B7BEA2AC6A11100052F54 /* BottomHalf */ = {
+			isa = PBXGroup;
+			children = (
+				988B7BF52AC6A14A00052F54 /* BottomHalfLocalizable.strings */,
+			);
+			path = BottomHalf;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,11 +137,12 @@
 			};
 			buildConfigurationList = 988B7BC22AC673A800052F54 /* Build configuration list for PBXProject "localizationDemo" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 988B7BBE2AC673A800052F54;
 			productRefGroup = 988B7BC82AC673A800052F54 /* Products */;
@@ -126,6 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				988B7BD72AC673A800052F54 /* LaunchScreen.storyboard in Resources */,
+				988B7BED2AC6A12A00052F54 /* TopHalfLocalizable.strings in Resources */,
+				988B7BE32AC679FF00052F54 /* Localizable.strings in Resources */,
+				988B7BF32AC6A14A00052F54 /* BottomHalfLocalizable.strings in Resources */,
 				988B7BD42AC673A800052F54 /* Assets.xcassets in Resources */,
 				988B7BD22AC673A800052F54 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988B7BE82AC67EA300052F54 /* LocalizationUtils.swift in Sources */,
 				988B7BCF2AC673A800052F54 /* ViewController.swift in Sources */,
 				988B7BCB2AC673A800052F54 /* AppDelegate.swift in Sources */,
 				988B7BCD2AC673A800052F54 /* SceneDelegate.swift in Sources */,
@@ -151,6 +189,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				988B7BD12AC673A800052F54 /* Base */,
+				988B7BDE2AC6743E00052F54 /* ja */,
+				988B7BE02AC6746700052F54 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -163,6 +203,33 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		988B7BE52AC679FF00052F54 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				988B7BE42AC679FF00052F54 /* ja */,
+				988B7BE62AC67A2A00052F54 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		988B7BEF2AC6A12A00052F54 /* TopHalfLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				988B7BEE2AC6A12A00052F54 /* ja */,
+				988B7BF02AC6A12C00052F54 /* en */,
+			);
+			name = TopHalfLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		988B7BF52AC6A14A00052F54 /* BottomHalfLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				988B7BF42AC6A14A00052F54 /* ja */,
+				988B7BF62AC6A14D00052F54 /* en */,
+			);
+			name = BottomHalfLocalizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -170,6 +237,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -230,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -287,6 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U572Q7GJ6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = localizationDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +384,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U572Q7GJ6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = localizationDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
